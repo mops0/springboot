@@ -16,7 +16,7 @@ artifacts:
   name: myapp-$(date +%Y%m%d%H%M%S).zip
   discard-paths: yes
   secondary-artifacts:
-    - name: manifest.json
+    manifest:
       files:
         - manifest.json
       base-directory: target/
