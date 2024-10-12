@@ -15,4 +15,6 @@ artifacts:
     - target/*.jar
   name: myapp-$(date +%Y%m%d%H%M%S).zip
   discard-paths: yes
+  base-directory: target/
+  
 
