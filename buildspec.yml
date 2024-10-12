@@ -15,8 +15,4 @@ artifacts:
     - target/*.jar
   name: myapp-$(date +%Y%m%d%H%M%S).zip
   discard-paths: yes
-  secondary-artifacts:
-    manifest:
-      files:
-        - manifest.json
-      base-directory: target/
+
