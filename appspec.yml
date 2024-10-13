@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/*  # Wskazanie na artefakt
+  - source: /  # Wskazanie na artefakt
     destination: /home/ubuntu/myapp/target/  # Docelowy folder na EC2
     overwrite: yes
   - source: /scripts/*  # Wskazanie na artefakt
