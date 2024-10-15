@@ -11,4 +11,4 @@ hooks:
   AfterInstall:
     - location: /home/ubuntu/myapp/scripts/deploy_application.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
