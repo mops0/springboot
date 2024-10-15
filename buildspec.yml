@@ -9,6 +9,9 @@ phases:
     commands:
       - echo Building the application...
       - mvn package
+  post_build:
+    commands:
+      - chmod + x ./scripts/deploy_application.sh
 
 artifacts:
   files:
