@@ -13,6 +13,7 @@ phases:
     commands:
       - echo "Jestem w katalogu:"
       - pwd
+      - ls - l
 artifacts:
   files:
     - target/*.jar
