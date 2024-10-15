@@ -7,4 +7,8 @@ files:
   - source: /scripts/  # Wskazanie na artefakt
     destination: /home/ubuntu/myapp/scripts/  # Docelowy folder na EC2
     overwrite: yes
-
+hooks:
+  AfterInstall:
+    - location: /home/ubuntu/myapp/scripts/deploy_application.sh
+      timeout: 300
+      runas: ubuntu
