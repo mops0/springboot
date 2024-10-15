@@ -11,8 +11,8 @@ phases:
       - mvn package
   post_build:
     commands:
-      - chmod + x ./scripts/deploy_application.sh
-
+      - echo "Jestem w katalogu:"
+      - pwd
 artifacts:
   files:
     - target/*.jar
