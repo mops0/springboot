@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
     @GetMapping("/")
     public String Welcome(){
-        return "Welcome on Szymczyszyn site";
+        return "Welcome on Szymczyszyn site automatically deployed";
     }
     @GetMapping("/hello")
     public String sayHallo(){
