@@ -20,6 +20,7 @@ artifacts:
     - target/*.jar
     - scripts/*.sh
     - appspec.yml
+    - Dockerfile
 
 
 
