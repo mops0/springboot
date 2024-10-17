@@ -9,6 +9,6 @@ files:
     overwrite: yes
 hooks:
   AfterInstall:
-    - location: /home/ubuntu/myapp/scripts/deploy_application.sh
+    - location: scripts/deploy_application.sh
       timeout: 300
       runas: root
