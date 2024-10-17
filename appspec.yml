@@ -8,7 +8,7 @@ files:
     destination: /home/ubuntu/myapp/scripts/  # Docelowy folder na EC2
     overwrite: yes
   - source: /Dockerfile  # Wskazanie na artefakt
-    destination: /home/ubuntu/myapp/Dockerfile  # Docelowy folder na EC2
+    destination: /home/ubuntu/myapp/  # Docelowy folder na EC2
     overwrite: yes
 hooks:
   AfterInstall:
