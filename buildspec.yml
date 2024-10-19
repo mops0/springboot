@@ -4,19 +4,14 @@ phases:
   install:
     commands:
       - echo Installing dependencies...
-      - java -version
       - mvn install
   build:
     commands:
       - echo Building the application...
-      - java -version
       - mvn package
   post_build:
     commands:
-      - echo "Jestem w katalogu:"
-      - pwd
-      - ls
-      - chmod +x scripts/deploy_application.sh
+      - chmod +x scripts/deploy_docker_container.sh
 artifacts:
   files:
     - target/*.jar

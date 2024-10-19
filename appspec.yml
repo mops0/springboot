@@ -12,6 +12,6 @@ files:
     overwrite: yes
 hooks:
   AfterInstall:
-    - location: scripts/deploy_application.sh
+    - location: scripts/deploy_docker_container.sh
       timeout: 300
       runas: root
