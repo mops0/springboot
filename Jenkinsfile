@@ -12,12 +12,14 @@ pipeline {
             steps {
                 // Kompilacja aplikacji
                 sh 'echo "Building the application..."'
+                sh 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
                 // Uruchamianie testów
                 sh 'echo "Running tests..."'
+                sh 'mvn install'
             }
         }
         stage('Deploy') {
